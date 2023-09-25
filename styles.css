@@ -7,6 +7,9 @@
     --color3: #26577C;
     --color4: #E55604;
   }
+  html {
+    font-size: 10px;
+  }
   body {
     margin: 0;
     padding: 0;
@@ -28,7 +31,8 @@
   #navbar a {
     text-decoration: none;
     color: var(--color4);
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 2rem;
     /* background-color: var(--color1); */
     padding: 10px 10px;
     font-weight: bold;
@@ -50,27 +54,30 @@
   }
   #welcome-section h1 {
     /* padding-top: 90px; */
-    font-size: 64px;
+    /* font-size: 64px; */
+    font-size: 6.4rem;
     color: var(--color1);
     text-shadow: 3px 3px 2px black;
   }
   #welcome-section p {
     margin-top: -30px;
-    font-size: 26px;
+    /* font-size: 26px; */
+    font-size: 2.6rem;
     color: var(--color4);
     font-style: italic;
   }
   #projects {
     width: 100%;
     background-color: var(--color2);
-    margin-top: -30px;
+    margin-top: -27px;
     padding-bottom: 80px;
   
   }
   #projects h1 {
     padding-top: 90px;
     text-align: center;
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: 3.2rem;
   }
   .project-grid {
     display: grid;
@@ -91,7 +98,8 @@
     background-color: var(--color3);
     margin: 0;
     padding: 10px 0;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 1.8rem;
     text-align: center;
     color: var(--color1);
     transition: font-family 0.3s ease-out;
@@ -122,12 +130,14 @@
     margin: 0;
     /* padding-top: 90px; */
     text-align: center;
-    font-size: 64px;
+    /* font-size: 64px; */
+    font-size: 6.4rem;
     color: var(--color1);
     text-shadow: 3px 3px 2px black;
   }
   #contact p {
-    font-size: 26px;
+    /* font-size: 26px; */
+    font-size: 2.6rem;
     color: var(--color4);
     font-style: italic;
   }
@@ -138,7 +148,8 @@
     text-decoration: none;
     color: var(--color1);
     margin: 0 20px;
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 2.4rem;
     text-shadow: 2px 2px 2px black;
   }
   footer {
@@ -150,6 +161,7 @@
     flex-direction: column;
     justify-content: space-between;
     color: var(--color1);
+    font-size: 1.8rem;
   }
   .comment {
     margin-left: 20px;
@@ -159,11 +171,22 @@
     margin-right: 20px;
     margin-top: 0;
   }
-  @media (max-width: 550px) {
+  /* @media (max-width: 550px) {
     #welcome-section h1 {
       font-size: 40px;
     }
     #contact h1 {
       font-size: 40px;
+    }
+  } */
+
+  @media (max-width: 1050px) {
+    html {
+      font-size: 8px;
+    }
+  }
+  @media (max-width: 768px) {
+    html {
+      font-size: 6px;
     }
   }
