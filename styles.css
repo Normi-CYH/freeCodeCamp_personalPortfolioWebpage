@@ -1,5 +1,7 @@
 * {
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
   }
   :root {
     --color1: #EBE4D1;
@@ -8,7 +10,7 @@
     --color4: #E55604;
   }
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
   body {
     margin: 0;
@@ -17,8 +19,11 @@
   #navbar {
     background-color: var(--color3);
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 55px;
+    /* height: 55px; */
+    height: 5.5rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -34,7 +39,7 @@
     /* font-size: 20px; */
     font-size: 2rem;
     /* background-color: var(--color1); */
-    padding: 10px 10px;
+    padding: 1rem 1rem;
     font-weight: bold;
   }
   #navbar a:hover {
@@ -51,6 +56,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   #welcome-section h1 {
     /* padding-top: 90px; */
@@ -60,7 +66,6 @@
     text-shadow: 3px 3px 2px black;
   }
   #welcome-section p {
-    margin-top: -30px;
     /* font-size: 26px; */
     font-size: 2.6rem;
     color: var(--color4);
@@ -69,7 +74,6 @@
   #projects {
     width: 100%;
     background-color: var(--color2);
-    margin-top: -27px;
     padding-bottom: 80px;
   
   }
@@ -78,6 +82,7 @@
     text-align: center;
     /* font-size: 32px; */
     font-size: 3.2rem;
+    margin-bottom: 20px;
   }
   .project-grid {
     display: grid;
@@ -118,28 +123,30 @@
   }
   #contact {
     background-color: var(--color3);
-    margin-top: -30px;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 110px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   #contact h1 {
-    margin: 0;
-    /* padding-top: 90px; */
-    text-align: center;
+    /* text-align: center; */
     /* font-size: 64px; */
     font-size: 6.4rem;
     color: var(--color1);
     text-shadow: 3px 3px 2px black;
   }
   #contact p {
+    margin: 10px 0;
     /* font-size: 26px; */
     font-size: 2.6rem;
     color: var(--color4);
     font-style: italic;
+  }
+  .profile-links {
+    margin: 10px 0;
   }
   .profile-links li {
     display: inline;
@@ -154,7 +161,6 @@
   }
   footer {
     background-color: var(--color3);
-    margin: -30px 0;
     border-top: 3px solid var(--color4);
     height: 90px;
     display: flex;
@@ -162,6 +168,7 @@
     justify-content: space-between;
     color: var(--color1);
     font-size: 1.8rem;
+    padding: 10px;
   }
   .comment {
     margin-left: 20px;
@@ -182,11 +189,17 @@
 
   @media (max-width: 1050px) {
     html {
-      font-size: 8px;
+      font-size: 10px;
     }
   }
   @media (max-width: 768px) {
     html {
-      font-size: 6px;
+      font-size: 8px;
+    }
+    .profile-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
